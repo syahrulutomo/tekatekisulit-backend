@@ -33,7 +33,6 @@ public class QuizController {
     @Autowired
     private QuizRepository qr;
     
-    @CrossOrigin(origins = "https://tekatekisulit.github.io:443")
     @GetMapping(path="/view")
     public @ResponseBody Iterable<Quiz> getAllQuestion() {
         // This returns a JSON or XML with the users
