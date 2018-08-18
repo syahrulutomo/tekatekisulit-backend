@@ -10,6 +10,7 @@ import com.ttscaklontong.backendtts.entity.Quiz;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -32,6 +33,7 @@ public class QuizController {
     @Autowired
     private QuizRepository qr;
     
+    @CrossOrigin(origins = "https://tekatekisulit.github.io:443")
     @GetMapping(path="/view")
     public @ResponseBody Iterable<Quiz> getAllQuestion() {
         // This returns a JSON or XML with the users
