@@ -26,6 +26,9 @@ public class Quiz {
     
     @Column(nullable = false)
     private String answer;
+    
+    @Column(nullable = false)
+    private String hints;
 
     public Integer getId() {
         return id;
