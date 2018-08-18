@@ -27,7 +27,6 @@ public class Quiz {
     @Column(nullable = false)
     private String answer;
     
-    @Column(nullable = false)
     private String hints;
 
     public Integer getId() {
@@ -52,6 +51,14 @@ public class Quiz {
 
     public void setAnswer(String answer) {
         this.answer = answer;
+    }
+
+    public String getHints() {
+        return hints;
+    }
+
+    public void setHints(String hints) {
+        this.hints = hints;
     }
     
     
