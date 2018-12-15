@@ -15,7 +15,7 @@ public class BackendTtsApplication {
 	SpringApplication.run(BackendTtsApplication.class, args);	
     }
     
-     @Bean
+    @Bean
     public FilterRegistrationBean corsFilterRegistration() {
         FilterRegistrationBean registrationBean =
                 new FilterRegistrationBean(new CORSFilter());
